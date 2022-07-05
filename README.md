@@ -18,14 +18,14 @@
 
 <br><br><br><br><br>
 
-### Part 1.1; Defining instance variables
-* Declare an instance variable for each of the previously mentioned properties:
+### Part 1.1; Defining instance variables//
+* Declare an instance variable for each of the previously mentioned properties://
 	* `String firstName`
-		* a collection of characters representative of a first name.
+		* a collection of characters representative of a first name.//
 	* `String lastName`
-		* a collection of characters representative of a last name.
+		* a collection of characters representative of a last name.//
 	* `ArrayList<Double> examScores`
-		* a dynamic collection of decimal values representative of test scores.
+		* a dynamic collection of decimal values representative of test scores.//
 
 
 
@@ -43,12 +43,12 @@
 
 <br><br><br><br><br>
 
-### Part 1.2; Defining construction
-* Define a `Student` constructor whose parameters are used to initalize its instance variables.
-* The `Student` constructor has expected parameters of
-	* `String` representative of a `firstName` 
-	* `String` representative of a `lastName`
-	* `Double[]` representative of a collection of `testScores`
+### Part 1.2; Defining construction// 
+* Define a `Student` constructor whose parameters are used to initalize its instance variables.//
+* The `Student` constructor has expected parameters of//
+	* `String` representative of a `firstName` //
+	* `String` representative of a `lastName`//
+	* `Double[]` representative of a collection of `testScores`//
 
 
 
@@ -67,7 +67,7 @@
 
 <br><br><br><br><br>
 
-### Part 1.3; Defining methods
+### Part 1.3; Defining methods//
 
 * **Getters and Setters**
 	* Define a [getter and setter](https://en.wikipedia.org/wiki/Mutator_method#Java_example) for each of the instance variables declared in the `Student` class.
@@ -86,7 +86,7 @@
 
 <br><br><br><br><br>
 
-* **Define method `getExamScores()`**
+* **Define method `getExamScores()`**//
 	* `Student` should define a method which returns a string representation of all exams taken.
 
 		* Sample Script:
