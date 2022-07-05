@@ -122,7 +122,7 @@
 
 <br><br><br><br><br>
 
-* **Define method `addExamScore(double examScore)`**
+* **Define method `addExamScore(double examScore)`**//
 	* `Student` should define a method named `addExamScore` which uses a `double` parameter to add an `examScore` to its composite List `examScores`.
 
 		* Sample Script:
@@ -160,7 +160,7 @@
 
 <br><br><br><br><br>
 
-* **Define method `setExamScore(int examNumber, double newScore)`**
+* **Define method `setExamScore(int examNumber, double newScore)`**//
 	* `Student` should define a method named `setExamScore` which uses an `int` parameter to identify an exam in the list, and a `double` parameter to re-assign the respective value.
 
 		* Sample Script:
@@ -194,7 +194,7 @@
  
 <br><br><br><br><br>
 
-* **Define method `getAverageExamScore()`**
+* **Define method `getAverageExamScore()`**//
 	* `Student` should define a method named `getAverageExamScore()` which returns the sum of the `examScore` list divided by its `size`.
 
 
@@ -224,7 +224,7 @@
 
 <br><br><br><br><br>
 
-* **Define method `toString()`**
+* **Define method `toString()`**//
 	* `Student` should [override](https://docs.oracle.com/javase/tutorial/java/IandI/override.html) the `toString` method by returning a clean `String` representation of the person.
 
 
@@ -264,13 +264,13 @@
 <br><br><br><br><br>
 
 ## Part 2; Create class `Classroom`
-* Create a class `Classroom`
+* Create a class `Classroom`//
 
 <br><br><br><br><br>
 
 ### Part 2.1; Defining instance variables
-* Declare an instance variable for each of the `Classroom` properties:
-	* `Student[] students`
+* Declare an instance variable for each of the `Classroom` properties://
+	* `Student[] students`//
 		* a collection of student objects
 
 
@@ -290,7 +290,7 @@
 <br><br><br><br><br>
 
 ### Part 2.2; Defining construction
-* Define a `Classroom` constructor whose parameters are used to initalize its instance variable. The class `Classroom` should support 3 different ways of being constructed.
+* Define a `Classroom` constructor whose parameters are used to initalize its instance variable. The class `Classroom` should support 3 different ways of being constructed.//
 	
 	1. The class `Classroom` should define a constructor which takes an argument of an `int` representative of the `maxNumberOfStudents` that this `Classroom` can hold.
 	
@@ -316,7 +316,7 @@
 
 ### Part 2.3; Defining methods
 
-* **Define method `getStudents()`**
+* **Define method `getStudents()`**//
 	* Define a getter which returns the composite `students` object.	
 
 
@@ -332,7 +332,7 @@
 
 <br><br><br><br><br>
 
-* **Define method `getAverageExamScore()`**
+* **Define method `getAverageExamScore()`**//
 	* Define a getter which returns the sum of all exam averages divided by the number of students.
 
 
@@ -373,7 +373,7 @@
 
 <br><br><br><br><br>
 
-* **Define method `addStudent(Student student)`**
+* **Define method `addStudent(Student student)`**//
 	* Define a method which uses a `Student` parameter to add a `Student` object to the composite `students` list.
 
 
