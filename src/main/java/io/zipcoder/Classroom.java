@@ -30,6 +30,7 @@ public class Classroom {
         for (Student student : students) {
             average += student.getAverageExamScore();
         }
+        average /= students.length;
         return average;
 
     }
@@ -40,6 +41,7 @@ public class Classroom {
     }
     public void removeStudent(String firstName, String lastName){
         ArrayList<Student> loseStudent = new ArrayList<>(Arrays.asList(students));
-//        This is where I left off...
+        loseStudent.clear();
+        students = loseStudent.toArray(new Student[0]);
     }
 }
