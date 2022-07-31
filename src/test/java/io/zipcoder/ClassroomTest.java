@@ -47,4 +47,26 @@ public class ClassroomTest {
         System.out.println("===========================");
         System.out.println(postEnrollmentAsString);
     }
+    @Test
+    public void testRemoveStudent(){
+        // : Given
+        int maxNumberOfStudents = 1;
+        Classroom classroom = new Classroom(maxNumberOfStudents);
+        Double[] examScores = { 100.0, 150.0, 250.0, 0.0 };
+        Student student = new Student("Leon", "Hunter", examScores);
+
+        // When
+        Student[] preEnrollment = classroom.getStudents();
+        classroom.removeStudent(student.firstName, student.lastName);
+        Student[] postEnrollment = classroom.getStudents();
+
+        // Then
+        String preEnrollmentAsString = Arrays.toString(preEnrollment);
+        String postEnrollmentAsString = Arrays.toString(postEnrollment);
+
+        System.out.println("===========================");
+        System.out.println(preEnrollmentAsString);
+        System.out.println("===========================");
+        System.out.println(postEnrollmentAsString);
+    }
 }

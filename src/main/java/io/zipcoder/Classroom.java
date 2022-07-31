@@ -3,6 +3,7 @@ package io.zipcoder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class Classroom {
 
@@ -43,5 +44,13 @@ public class Classroom {
         ArrayList<Student> loseStudent = new ArrayList<>(Arrays.asList(students));
         loseStudent.clear();
         students = loseStudent.toArray(new Student[0]);
+    }
+    public Student[] getStudentsByScore(){
+        Comparator<Student> studentComparator = Comparator
+                .comparing(Student::getAverageExamScore).reversed().thenComparing(Student::getLastName);
+        Student[] listStudents = getStudents();
+        Arrays.sort(listStudents, studentComparator);
+
+        return listStudents;
     }
 }
