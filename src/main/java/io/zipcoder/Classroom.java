@@ -1,9 +1,6 @@
 package io.zipcoder;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class Classroom {
 
@@ -52,5 +49,29 @@ public class Classroom {
         Arrays.sort(listStudents, studentComparator);
 
         return listStudents;
+    }
+    public HashMap getGradeBook(){
+        HashMap<Student, Character> studentCharacterHashMap = new HashMap<>();
+        Student[] listStudent = getStudentsByScore();
+        int count = 1;
+
+        for (Student student : listStudent) {
+            double grade = ((double) count) / ((double) maxNumStudents) * ((double) 100);
+
+            if (student.getNumberOfExamsTaken() == 0)
+                studentCharacterHashMap.put(student, ' ');
+            else if (grade <= 10)
+                studentCharacterHashMap.put(student, 'A');
+            else if (grade >= 11 && grade <= 29)
+                studentCharacterHashMap.put(student, 'B');
+            else if (grade >= 30 && grade <= 50)
+                studentCharacterHashMap.put(student, 'C');
+            else if (grade >= 51 && grade <= 89)
+                studentCharacterHashMap.put(student, 'D');
+            else
+                studentCharacterHashMap.put(student, 'F');
+
+        }
+        return studentCharacterHashMap;
     }
 }
